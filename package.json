@@ -1,0 +1,22 @@
+{
+  "name": "repro-pkgroll-lib",
+  "private": true,
+  "scripts": {
+    "prepare": "pkgroll --sourcemap",
+    "build": "pkgroll --sourcemap"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.2",
+    "pkgroll": "^2.5.0",
+    "typescript": "^5.6.2"
+  }
+}
