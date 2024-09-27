@@ -2,7 +2,7 @@
   "name": "repro-pkgroll-lib",
   "private": true,
   "scripts": {
-    "prepare": "pwd && ls -aR1 && pkgroll --sourcemap",
+    "prepare": "env && locale && pwd && ls -aR1 && (ls --version || true) && (tsc --version || true) && pkgroll --sourcemap",
     "build": "pkgroll --sourcemap"
   },
   "main": "./dist/index.js",
