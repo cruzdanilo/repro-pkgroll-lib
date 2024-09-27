@@ -2,7 +2,7 @@
   "name": "repro-pkgroll-lib",
   "private": true,
   "scripts": {
-    "prepare": "env && locale && pwd && ls -aR1 && (ls --version || true) && (tsc --version || true) && pkgroll --sourcemap",
+    "prepare": "(which tsc && tsc --version || true) && pkgroll --sourcemap",
     "build": "pkgroll --sourcemap"
   },
   "main": "./dist/index.js",
@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "@types/node": "^22.7.2",
-    "pkgroll": "^2.5.0",
+    "pkgroll": "cruzdanilo/pkgroll#609cd15",
     "typescript": "^5.6.2"
   }
 }
